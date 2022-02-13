@@ -26,6 +26,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install django-environ
         pip install -r requirements.txt         
-    - name: Run App
+    - name: Run Test
       run: |
-        python manage.py runserver
+        python manage.py test
